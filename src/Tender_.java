@@ -35,7 +35,7 @@ public class Tender_ {
 
         int age;
         double amountOfCash;
-        boolean invite = false;
+        boolean invite = true;
         boolean blackListStatus = true;
         boolean accessIsPossible = false;
 
@@ -55,15 +55,12 @@ public class Tender_ {
         System.out.println("Наличие приглашения - " + invite);
 
 
-        if (age >= 18){
-            if(blackListStatus){
-                accessIsPossible = false;
-            }
-            if(amountOfCash > 50000 || invite == true){
+        if (age >= 18 & !blackListStatus){
+            if(amountOfCash > 50000 || invite){
                 accessIsPossible = true;
             }
 
-        }
+            }
 
         if (accessIsPossible == true){
             double tax;
