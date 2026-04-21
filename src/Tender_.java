@@ -52,11 +52,17 @@ public class Tender_ {
         System.out.print("Сумма денях = ");
         System.out.printf("%.2f",amountOfCash);
         System.out.println("\n");
+        System.out.println("Наличие приглашения - " + invite);
+
 
         if (age > 18){
-            if(blackListStatus || invite){
+            if(blackListStatus){
+                accessIsPossible = false;
+            }
+            if(amountOfCash > 50000 || invite == true){
                 accessIsPossible = true;
             }
+
         }
 
         if (accessIsPossible == true){
@@ -67,6 +73,7 @@ public class Tender_ {
 
         }else{
             System.out.println("Доступ запрещён");
+
         };
 
 
