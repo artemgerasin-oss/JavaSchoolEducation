@@ -8,10 +8,10 @@ public class BussinessCoach {
         double amountInTheAccount = random.nextDouble() * 100_000;
 
         boolean hasInvite = false;
-        boolean InBlackList = false;
+        boolean inBlackList = false;
 
         boolean already18Years = ageVisitor >= 18;
-        boolean canPresent = (already18Years && (hasInvite || amountInTheAccount > 50_000) && !InBlackList);
+        boolean canPresent = (already18Years && (hasInvite || amountInTheAccount > 50_000) && !inBlackList);
         double voluntaryContribution = amountInTheAccount * 7.5 / 100;
 
         System.out.println("Возраст посетителя: " + ageVisitor);
