@@ -50,7 +50,7 @@ public class Tender_ {
         System.out.println("Кандидат: Василий");
         System.out.println("Возраст = " + age);
         System.out.print("Сумма денях = ");
-        System.out.printf("%.2f",amountOfCash);
+        System.out.printf("%.2f",amountOfCash, "%n");
         System.out.println("\n");
         System.out.println("Наличие приглашения - " + invite);
 
