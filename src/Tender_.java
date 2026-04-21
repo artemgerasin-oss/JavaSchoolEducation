@@ -55,7 +55,7 @@ public class Tender_ {
         System.out.println("Наличие приглашения - " + invite);
 
 
-        if (age > 18){
+        if (age >= 18){
             if(blackListStatus){
                 accessIsPossible = false;
             }
